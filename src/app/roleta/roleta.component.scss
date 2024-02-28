@@ -81,6 +81,7 @@ body {
     border: none;
     background: white ;// radial-gradient( #800000, #3d3431 85%);
     color: rgb(173, 11, 11);
+    box-shadow: 0 6px 7px #000000;
     text-transform: uppercase;
     font-size: 1.8em;
     letter-spacing: 0.1em;
@@ -104,10 +105,10 @@ h2{
 }
 
 #final-value, h2{
-    font-size: 1.7em;
+    font-size: 1.9em;
     text-align: center;
     margin-top: 0.5em;
-    color: #e2d5be;
+    color: #e1d7c5;
     font-weight: 500;
 }
 
@@ -145,3 +146,19 @@ h2{
     bottom: 0;
     z-index: -1;
 }
+
+.blink-btn {
+    animation: blink-animation 0.5s infinite;
+}
+
+@keyframes blink-animation {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.8;
+    }
+}
+
+
+  
