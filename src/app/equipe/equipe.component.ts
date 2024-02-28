@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class EquipeComponent {
   equipe = [
-    { nome: 'Dra. Isis Kovesdy', image: 'assets/img/IsisFoto.jpg'},
+    { nome: 'Dra. Isis Kovesdy Bravo', image: 'assets/img/IsisFoto.jpg'},
     { nome: 'Dra. Pauli Vicente', image: 'assets/img/PauliFoto.jpg' },
     // Adicione mais membros da equipe conforme necessário
   ];
