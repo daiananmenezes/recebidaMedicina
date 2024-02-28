@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<header>
+    <mat-toolbar style="background-color: #3d3431">
+        <span class="material-symbols-outlined" >
+        stethoscope
+        </span>
+        <span style="color: #e2d5be;" class="text-header">Clinica Médica YP</span>
+        <nav mat-tab-nav-bar style="margin-left: auto;">
+        <mat-icon (click)="toggleMenu()" style="color: #e2d5be;">menu</mat-icon>
+        <ul class="menu-list" *ngIf="menuAberto">
+            <li><a mat-tab-link routerLink="/home">Home</a></li>
+            <li><a mat-tab-link routerLink="/equipe">Equipe</a></li>
+        </ul>
+        </nav>
+    </mat-toolbar>
+</header>

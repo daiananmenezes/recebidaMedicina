@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'bwVivant';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantmedio';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantthin';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantregular';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-regular.ttf') format('truetype');
+}
+
+body {
+  /* Defina a imagem de fundo com 50% de transparência */
+  background:  #e2d5be;
+  margin: -1px
+}
+
+h2{
+  text-align: center;
+  color: White;
+  font-family: "bwVivant", Sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+}
+.services-container {
+  text-align: center;
+}
+
+.services-container h3 {
+  margin-bottom: 20px; /* Espaçamento entre o h3 e os cartões */
+}
+
+nav {
+  margin-top: 10px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+mat-card {
+  width: 300px;
+  margin: 10px;
+  background: #19151559;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+  border-radius: 4px; /* Cantos arredondados */
+  margin-bottom: 20px; /* Espaço entre os cards */
+  transition: transform 0.3s; /* Efeito de transição suave */
+}
+
+mat-card:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.mat-card-title-center {
+  font-family: "Oxanium", sans-serif;
+}
+
+mat-card-title {
+  text-align: center !important;
+  margin-bottom: 10px;
+  /* font-size: 1.2em; */
+  color: white;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  mat-card {
+    width: calc(100% - 20px);
+  }
+}

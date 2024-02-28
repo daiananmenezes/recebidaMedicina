@@ -1,0 +1,16 @@
+<body>
+  <h2>Nossos Serviços</h2>
+  <section class="services-container">
+    <mat-card class="highlight-card" *ngFor="let service of services">
+      <mat-card-header>
+        <mat-card-title class="mat-card-title-center">{{ service.title }}</mat-card-title>
+      </mat-card-header>
+      <div class="image-container">
+        <img mat-card-image [src]="service.image" alt="{{ service.title }}">
+      </div>
+      <mat-card-content>
+        <p></p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+</body>

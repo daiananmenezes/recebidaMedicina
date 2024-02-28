@@ -1,0 +1,147 @@
+body {
+    background: linear-gradient(to bottom, #483d39, #e2d5be);
+    min-height: 610px;
+    margin: -1px
+  }
+
+*{
+    margin : 0 ;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: "Oxanium",sans-serif;
+}
+
+
+.wrapper{
+    width:90%;
+    max-width: 40.37em;
+    max-height: 90vh;
+    background-color: #19151559;
+    position : absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 25em #e2d5be;
+    
+}
+.wrapper {
+    width: 90%;
+    max-width: 40.37em;
+    max-height: 90vh;
+    background-color: #19151559;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 25em #e2d5be;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        top: 55%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        top: 45%;
+    }
+}
+
+.container{
+    position : relative;
+    width : 100%;
+    height : 100%;
+}
+
+.chartjs-datalabels {
+    transform: rotate(-90deg); /* Girar os textos em -90 graus (sentido anti-horário) */
+  }
+
+#whell{
+    max-height: inherit;
+    width:inherit;
+    top: 0;
+    padding: 0;
+}
+
+#spin-btn{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 70%;
+    width: 29%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: white ;// radial-gradient( #800000, #3d3431 85%);
+    color: rgb(173, 11, 11);
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+
+img{
+    position: absolute;
+    width: 4em;
+    top: 30%;
+    right: -8%;
+
+}
+
+h2{
+    font-family: "Oxanium",sans-serif;
+}
+
+.material-symbols-outlined{
+    color: rgb(173, 11, 11);
+}
+
+#final-value, h2{
+    font-size: 1.7em;
+    text-align: center;
+    margin-top: 0.5em;
+    color: #e2d5be;
+    font-weight: 500;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        font-size: 12px;
+    }
+
+    .img{
+        right:-5;
+    }
+
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

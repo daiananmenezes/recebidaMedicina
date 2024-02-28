@@ -1,0 +1,9 @@
+<body>
+    <h2>Nossa Equipe</h2>
+    <div class="membros">
+        <div *ngFor="let membro of equipe" class="membro">
+            <img [src]="membro.image" alt="{{membro.nome}}">
+            <h3>{{membro.nome}}</h3>
+        </div>
+    </div>
+</body>

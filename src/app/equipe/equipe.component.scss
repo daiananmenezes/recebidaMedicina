@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'bwVivant';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantmedio';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantthin';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantregular';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantblack';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-black.ttf') format('truetype');
+}
+
+h2{
+  text-align: center;
+  color: White;
+  font-family: "bwVivant", Sans-serif;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+h3{
+  font-family: "Poppins",Sans-serif;
+}
+
+body {
+  /* Defina a imagem de fundo com 50% de transparência */
+  background:  #e2d5be;
+  min-height: 610px;
+  margin: -1px
+}
+
+.membros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os membros horizontalmente */
+  margin-top: 70px;
+  gap: 20px;
+}
+
+.membro {
+  width: calc(50% - 20px);
+  text-align: center;
+}
+
+.membro img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0 auto 10px; /* Centraliza a imagem verticalmente */
+  display: block;
+}
+
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 767px) {
+  .membros {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .membro {
+      width: 100%;
+  }
+}
+
+/* Estilos para telas maiores ou iguais a 768px */
+@media (min-width: 768px) {
+  .membro {
+      width: calc(50% - 20px);
+  }
+}
+
+/* Estilos para telas maiores ou iguais a 992px */
+@media (min-width: 992px) {
+  .membro {
+      width: calc(33.33% - 20px);
+  }
+}

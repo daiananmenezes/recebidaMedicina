@@ -1,0 +1,75 @@
+
+@font-face {
+  font-family: 'bwVivant';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantmedio';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantthin';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bwVivantregular';
+  src: url('/assets/fonts/Bw-Vivant/bw-vivant-regular.ttf') format('truetype');
+}
+
+body {
+  /* Defina a imagem de fundo com 50% de transparência */
+  background:  #e2d5be;
+  margin: -1px
+}
+
+header {
+    text-align: center;
+    margin: -1px;
+  }
+
+
+.text-header{
+  font-family: "bwVivant", Sans-serif;
+}
+  
+
+  .menu-list {
+    display: none; /* Esconde a lista por padrão */
+    background-color: #e2d5be; /* Cor de fundo da lista */
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    margin-top: 218px
+  }
+  
+  .menu-list li {
+    padding: 10px; /* Espaçamento interno entre os itens da lista */
+  }
+  
+  /* Mostra a lista quando o ícone de menu é clicado */
+  mat-icon:hover + .menu-list,
+  .menu-list:hover {
+    display: block;
+  }
+  
+  .menu-list {
+    display: none;
+  }
+  
+  .mostrar-menu {
+    display: block;
+  }
+  
+.material-symbols-outlined {
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 12px;
+  color: #e2d5be;
+  }
+
+
+  

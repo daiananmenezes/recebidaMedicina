@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  app-header {
+    flex: 0 0 auto; /* Não cresce, não encolhe, altura automática */
+  }
+  
+  app-home {
+    flex: 0 0 auto; /* Não cresce, não encolhe, altura automática */
+  }
+  
+  app-roleta {
+    flex: 0 0 auto; /* Não cresce, não encolhe, altura automática */
+  }
+  
+  app-equipe {
+    flex: 1 0 auto; /* Cresce, não encolhe, altura automática */
+  }
+  

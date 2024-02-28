@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'bwVivant';
+    src: url('assets/fonts/Bw-Vivant/bw-vivant-light.ttf') format('truetype');
+}
+
+body {
+    font-family: 'bwVivant', sans-serif;
+}
+
+
+html, body { height: 100%; }
+
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Exemplo de uso para títulos */
+  h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
